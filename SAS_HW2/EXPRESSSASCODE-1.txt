@@ -1,0 +1,59 @@
+
+
+data EXPRESS;
+  input Weight	Distance	Cost;
+  datalines;
+5.90	47	2.6
+3.20	145	3.9
+4.40	202	8.0
+6.60	160	9.2
+0.75	280	4.4
+0.70	80	1.5
+6.50	240	14.5
+4.50	53	1.9
+0.60	100	1.0
+7.50	190	14.0
+5.10	240	11.0
+2.40	209	5.0
+0.30	160	2.0
+6.20	115	6.0
+2.70	45	1.1
+3.50	250	8.0
+4.10	95	3.3
+8.10	160	12.1
+7.00	260	15.5
+1.10	90	1.7
+;
+run;
+/*Creat interaction term and quadratic terms*/
+data express2;
+  set EXPRESS;
+  x1=Weight;
+  x2=Distance;
+  x1x2=Weight*Distance;
+  x1SQ=Weight*Weight;
+  x2SQ=Distance*Distance;
+run;
+proc print data=express2;
+run;
+proc sgplot data=express2;
+  scatter y=Cost x=Weight;
+run;
+
+/*Regression of Reduced model*/
+proc reg data=express2;
+  model Cost=x1 x2 x1x2;
+  title'Reduced model';
+run;
+/*Regression of complete model*/
+proc reg data=express2;
+  model Cost=x1 x2 x1x2 x1SQ  x2SQ;
+  title'Full model';
+run;
+
+/*Partial F-test*/
+proc reg data=express2;
+  model Cost=x1 x2 x1x2 x1SQ  x2SQ;
+  quadratic: test x1SQ, x2SQ=0; /*TEst if the quadratic terms significant*/
+  title'Partial F-test';
+run;

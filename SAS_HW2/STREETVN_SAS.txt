@@ -1,0 +1,51 @@
+
+proc import out=street /*name to give dataset once imported into SAS*/
+        datafile="/home/u63543330/STREETVN.txt" /*location of text file to import*/
+        /*dbms=dlm  /*Format of file being imported (dlm assumes spaces are used as delimiters*/
+        dbms=tab /*Format of file being imported (tab assumes spaces are used as tab delimiters*/
+        replace; /*Replace the file if it alreadt exists*/
+        getnames=YES; /*Use first row as variable names (Set to  NO if first row doesn't contain variable names)*/
+ run;
+
+proc print data=street;
+run;
+
+proc reg data=street;
+  model Earnings=Age Hours/p cli clm clb;
+run;
+
+data street1;
+ input age hours;
+ datalines;
+    25     8
+;
+run;
+
+data street2;
+  set street street1;
+run;
+
+proc reg data=street2;
+  model Earnings=Age Hours/p cli clb;
+run; 
+
+proc print data=street2;
+run;
+
+
+proc reg data=street2;
+  model Earnings=Age Hours/p cli clb;
+run; 
+
+data street3;
+  set street2;
+  agehour=Age*Hours;
+run;
+
+proc reg data=street3;
+  model Earnings=Age Hours agehour/ clb cli clm;
+run;
+
+proc reg data=street3;
+  model Earnings=Age Hours agehour/ VIF;
+run;

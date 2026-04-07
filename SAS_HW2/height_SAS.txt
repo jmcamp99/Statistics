@@ -1,0 +1,37 @@
+
+proc import out=height /*name to give dataset once imported into SAS*/
+        datafile="/home/u63543330/heights.txt" /*location of text file to import*/
+        /*dbms=dlm  /*Format of file being imported (dlm assumes spaces are used as delimiters*/
+        dbms=tab /*Format of file being imported (tab assumes spaces are used as tab delimiters*/
+        replace; /*Replace the file if it alreadt exists*/
+        getnames=YES; /*Use first row as variable names (Set to  NO if first row doesn't contain variable names)*/
+ run;
+
+proc print data=height;
+run;
+/*Getting prediction and confidence intervals for specific values of x*/
+proc reg data=Height;
+  model Dheight=Mheight/ clb p clm cli alpha=0.05; /*clb:C.I.for beta1. p:predicted value. clm:C.I.for estimated mean. cli:P.I.for particular response.*/
+run;
+
+
+/*Prediction and estimation for values of x that are not in the data set*/
+/*Create new observations*/
+data height2;
+  input Mheight;
+  datalines;
+  65
+;
+run;
+
+/*Add height2 to height*/
+data height3;
+  set height height2;
+run;
+
+proc print data=height3;
+run;
+
+proc reg data=Height3;
+  model Dheight=Mheight/ clb p clm cli alpha=0.05; /*clb:C.I.for beta1. p:predicted value. clm:C.I.for estimated mean. cli:P.I.for particular response.*/
+run
