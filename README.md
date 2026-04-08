@@ -1,1 +1,1 @@
-# This Repo includes R and SAS files for Statistics.
+# This Repo includes R markdown and SAS files along with corresponding txt files for Statistics.
