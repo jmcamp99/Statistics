@@ -1,0 +1,50 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA carvalue
+
+NOTE: Processing inline DATALINES (54 lines)
+
+NOTE: Read 54 rows from DATALINES.
+NOTE: Wrote carvalue (54 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC REG data=carvalue
+
+NOTE: PROC REG: processed 1 job(s) in batch
+NOTE: Output dataset pred_results written.
+NOTE: ODS plot written: reg_residuals_vs_predicted.spec.json
+NOTE: ODS plot written: reg_residual_histogram_panel.spec.json
+NOTE: ODS plot written: reg_residuals_vs_obs_order.spec.json
+NOTE: ODS plot written: reg_qq_plot.spec.json
+NOTE: ODS plot written: reg_cooksd.spec.json
+NOTE: PROC REG ODS Graphics generated.
+NOTE: PROC REG data=carvalue
+
+NOTE: PROC REG: processed 1 job(s) in batch
+NOTE: Output dataset analysis written.
+NOTE: ODS plot written: reg_residuals_vs_predicted.spec.json
+NOTE: ODS plot written: reg_residual_histogram_panel.spec.json
+NOTE: ODS plot written: reg_residuals_vs_obs_order.spec.json
+NOTE: ODS plot written: reg_qq_plot.spec.json
+NOTE: ODS plot written: reg_cooksd.spec.json
+NOTE: PROC REG ODS Graphics generated.
+NOTE: PROC PRINT data=analysis
+
+NOTE: PROC PRINT completed: 54 observations printed, 10 variables
+NOTE: DATA carvalue2
+
+
+NOTE: Read 54 rows from carvalue.
+NOTE: Wrote carvalue2 (54 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC REG data=carvalue2
+
+NOTE: PROC REG: processed 1 job(s) in batch
+NOTE: ODS plot written: reg_residuals_vs_predicted.spec.json
+NOTE: ODS plot written: reg_residual_histogram_panel.spec.json
+NOTE: ODS plot written: reg_residuals_vs_obs_order.spec.json
+NOTE: ODS plot written: reg_qq_plot.spec.json
+NOTE: ODS plot written: reg_cooksd.spec.json
+NOTE: PROC REG ODS Graphics generated.

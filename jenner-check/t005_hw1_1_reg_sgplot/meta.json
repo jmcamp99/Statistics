@@ -1,0 +1,7 @@
+{
+  "bundle": "t005_hw1_1_reg_sgplot",
+  "source_file": "SAS_HW1/HW1_1.sas",
+  "source_blob_sha": "07d31912b9a6042adf4d339643d919e54d2b7763",
+  "source_commit": "50802b74dc9b0cafc61875c52303ce2f9e067d22",
+  "notes": "Self-contained portion of SAS_HW1/HW1_1.sas. The opening PROC IMPORT of BLACKBREAM.txt (a SAS Studio home path) is omitted; everything kept is the author's own inline code: two DATALINES data sets (blackbream1 9 rows, heat 24 rows), each PROC PRINTed, plotted with PROC SGPLOT scatter, and fit with a simple linear PROC REG (model y=x) whose predicted values and residuals are written to pred_results and printed."
+}

@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_vehicles_reg_diagnostics",
+  "source_file": "Vehicles.sas",
+  "source_blob_sha": "68cd915a549f0a0e9795d2b21293a2d229ca05a4",
+  "source_commit": "50802b74dc9b0cafc61875c52303ce2f9e067d22",
+  "notes": "Root Vehicles.sas, byte-identical: inline carvalue (54 rows, sedans) via DATALINES, then PROC REG with Durbin-Watson, influence/R diagnostics (studentized residuals, leverage, Cook's D via OUTPUT), a PROC PRINT of the analysis dataset, and a carvalue2 DATA step adding a Road_Test x Predicted_Reliability interaction re-fit by PROC REG. Fully self-contained; no edits needed."
+}

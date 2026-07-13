@@ -1,0 +1,270 @@
+  Obs  SignalType  Delay
+-----  ----------  -----
+    1  Pretimed     36.6
+    2  Pretimed     39.2
+    3  Pretimed     30.4
+    4  Pretimed     37.1
+    5  Pretimed     34.1
+    6  SemiAct      17.5
+    7  SemiAct      20.6
+    8  SemiAct      18.7
+    9  SemiAct      25.7
+   10  SemiAct        22
+   11  FullyAct       15
+   12  FullyAct     10.4
+   13  FullyAct     18.9
+   14  FullyAct     10.5
+   15  FullyAct      5.2
+
+                          The GLM Procedure                          
+                      Dependent Variable: delay                      
+
+Source            DF  Sum of Squares  Mean Square   F Value    Pr > F
+----------  --------  --------------  -----------  --------  --------
+signaltype         2      1405.16133    702.58067     43.50    <.0001
+Error             12       193.82800     16.15233                    
+
+Root MSE           4.01900    R-Square            0.8788
+Adj R-Sq            0.8586
+
+                      Parameter Estimates                       
+
+Parameter           Estimate  Standard Error   t Value  Pr > |t|
+------------------  --------  --------------  --------  --------
+(Intercept)         12.00000         1.79735      6.68    <.0001
+signaltypePretimed  23.48000         2.54184      9.24    <.0001
+signaltypeSemiAct    8.90000         2.54184      3.50    0.0044
+
+                            Contrast Results                             
+
+Contrast                              DF  Contrast SS   F Value    Pr > F
+------------------------------  --------  -----------  --------  --------
+Pretimed vs SemiAct & FullyAct         1     873.7203     54.09    <.0001
+SemiAct vs FullyAct                    1     531.4410     32.90    <.0001
+
+     Means for Effect: SignalType     
+
+Level         Mean   Std Dev         N
+--------  --------  --------  --------
+FullyAct  12.00000   5.18797         5
+Pretimed  35.48000   3.37001         5
+SemiAct   20.90000   3.19139         5
+
+Levene's Test for Homogeneity of Variance
+
+Statistic    Pr > F
+---------  --------
+   0.3914    0.6844
+
+     Means for Effect: SignalType     
+
+Level         Mean   Std Dev         N
+--------  --------  --------  --------
+FullyAct  12.00000   5.18797         5
+Pretimed  35.48000   3.37001         5
+SemiAct   20.90000   3.19139         5
+
+     Means for Effect: SignalType     
+
+Level         Mean   Std Dev         N
+--------  --------  --------  --------
+FullyAct  12.00000   5.18797         5
+Pretimed  35.48000   3.37001         5
+SemiAct   20.90000   3.19139         5
+
+                t Tests (LSD) for SignalType                
+
+Group 1   Group 2   Difference       LSD  Pr > |t|  Sig     
+--------  --------  ----------  --------  --------  --------
+FullyAct  Pretimed   -23.48000   5.53819    <.0001  ***     
+FullyAct  SemiAct     -8.90000   5.53819    0.0044  ***     
+Pretimed  SemiAct     14.58000   5.53819    <.0001  ***     
+
+     Means for Effect: SignalType     
+
+Level         Mean   Std Dev         N
+--------  --------  --------  --------
+FullyAct  12.00000   5.18797         5
+Pretimed  35.48000   3.37001         5
+SemiAct   20.90000   3.19139         5
+
+          Least Squares Means for SignalType          
+
+Level       LSMean  Standard Error  Lower CL  Upper CL
+--------  --------  --------------  --------  --------
+FullyAct   12.0000          1.7973    8.0839   15.9161
+Pretimed   35.4800          1.7973   31.5639   39.3961
+SemiAct    20.9000          1.7973   16.9839   24.8161
+
+        Differences of Least Squares Means for SignalType        
+
+Comparison           Estimate  Standard Error   t Value  Pr > |t|
+-------------------  --------  --------------  --------  --------
+FullyAct - Pretimed  -23.4800          2.5418     -9.24    <.0001
+FullyAct - SemiAct    -8.9000          2.5418     -3.50    0.0044
+Pretimed - SemiAct    14.5800          2.5418      5.74    <.0001
+
+
+  Obs  Nitrogen  Heads
+-----  --------  -----
+    1         0    104
+    2         0    114
+    3         0     90
+    4         0    140
+    5        50    134
+    6        50    130
+    7        50    144
+    8        50    174
+    9       100    146
+   10       100    142
+   11       100    152
+   12       100    156
+   13       150    147
+   14       150    160
+   15       150    160
+   16       150    163
+
+                         The GLM Procedure                         
+                     Dependent Variable: heads                     
+
+Source          DF  Sum of Squares  Mean Square   F Value    Pr > F
+--------  --------  --------------  -----------  --------  --------
+nitrogen         3      4790.00000   1596.66667      6.86    0.0060
+Error           12      2792.00000    232.66667                    
+
+Root MSE          15.25341    R-Square            0.6318
+Adj R-Sq            0.5397
+
+                  Contrast Results                  
+
+Contrast         DF  Contrast SS   F Value    Pr > F
+---------  --------  -----------  --------  --------
+Linear            1    3920.0000     16.85    0.0015
+Quadratic         1     625.0000      2.69    0.1272
+
+
+  Obs  Stage  Treatment  Steroid
+-----  -----  ---------  -------
+    1      1  T1            6.98
+    2      1  T1            6.58
+    3      1  T1            6.86
+    4      1  T2            8.62
+    5      1  T2             9.4
+    6      1  T2             9.2
+    7      2  T1            5.38
+    8      2  T1            7.31
+    9      2  T1            6.65
+   10      2  T2            4.96
+   11      2  T2             6.8
+   12      2  T2            7.61
+   13      3  T1            7.02
+   14      3  T1            9.23
+   15      3  T1            7.32
+   16      3  T2            7.17
+   17      3  T2            6.52
+   18      3  T2            6.86
+
+                            The GLM Procedure                             
+                       Dependent Variable: steroid                        
+
+Source                 DF  Sum of Squares  Mean Square   F Value    Pr > F
+---------------  --------  --------------  -----------  --------  --------
+stage                   2         3.22020      1.61010      2.12    0.1627
+treatment               1         7.70667      7.70667     10.15    0.0078
+stage:treatment         2         8.42043      4.21022      5.55    0.0197
+Error                  12         9.11053      0.75921                    
+
+Root MSE           0.87133    R-Square            0.6368
+Adj R-Sq            0.4854
+
+Least Squares Means for Stage*Treatment
+
+Level       LSMean  Standard Error
+--------  --------  --------------
+1*T1        6.8067          0.5031
+2*T1        6.4467          0.5031
+3*T1        7.8567          0.5031
+1*T2        9.0733          0.5031
+2*T2        6.4567          0.5031
+3*T2        6.8500          0.5031
+
+ Differences of Least Squares Means for Stage*Treatment  
+
+Comparison   Estimate  Standard Error   t Value  Pr > |t|
+-----------  --------  --------------  --------  --------
+1*T1 - 2*T1    0.3600          0.7114      0.51    0.6220
+1*T1 - 3*T1   -1.0500          0.7114     -1.48    0.1657
+1*T1 - 1*T2   -2.2667          0.7114     -3.19    0.0078
+1*T1 - 2*T2    0.3500          0.7114      0.49    0.6316
+1*T1 - 3*T2   -0.0433          0.7114     -0.06    0.9524
+2*T1 - 3*T1   -1.4100          0.7114     -1.98    0.0709
+2*T1 - 1*T2   -2.6267          0.7114     -3.69    0.0031
+2*T1 - 2*T2   -0.0100          0.7114     -0.01    0.9890
+2*T1 - 3*T2   -0.4033          0.7114     -0.57    0.5812
+3*T1 - 1*T2   -1.2167          0.7114     -1.71    0.1129
+3*T1 - 2*T2    1.4000          0.7114      1.97    0.0726
+3*T1 - 3*T2    1.0067          0.7114      1.41    0.1825
+1*T2 - 2*T2    2.6167          0.7114      3.68    0.0032
+1*T2 - 3*T2    2.2233          0.7114      3.13    0.0088
+2*T2 - 3*T2   -0.3933          0.7114     -0.55    0.5905
+
+  Least Squares Means for Stage   
+
+Level       LSMean  Standard Error
+--------  --------  --------------
+1           7.9400          0.3557
+2           6.4517          0.3557
+3           7.3533          0.3557
+
+      Differences of Least Squares Means for Stage      
+
+Comparison  Estimate  Standard Error   t Value  Pr > |t|
+----------  --------  --------------  --------  --------
+1 - 2         1.4883          0.5031      2.96    0.0120
+1 - 3         0.5867          0.5031      1.17    0.2662
+2 - 3        -0.9017          0.5031     -1.79    0.0983
+
+Least Squares Means for Treatment 
+
+Level       LSMean  Standard Error
+--------  --------  --------------
+T1          7.0367          0.2904
+T2          7.4600          0.2904
+
+    Differences of Least Squares Means for Treatment    
+
+Comparison  Estimate  Standard Error   t Value  Pr > |t|
+----------  --------  --------------  --------  --------
+T1 - T2      -0.4233          0.4107     -1.03    0.3230
+
+Least Squares Means for Stage*Treatment
+
+Level       LSMean  Standard Error
+--------  --------  --------------
+1*T1        6.8067          0.5031
+2*T1        6.4467          0.5031
+3*T1        7.8567          0.5031
+1*T2        9.0733          0.5031
+2*T2        6.4567          0.5031
+3*T2        6.8500          0.5031
+
+ Differences of Least Squares Means for Stage*Treatment  
+
+Comparison   Estimate  Standard Error   t Value  Pr > |t|
+-----------  --------  --------------  --------  --------
+1*T1 - 2*T1    0.3600          0.7114      0.51    0.6220
+1*T1 - 3*T1   -1.0500          0.7114     -1.48    0.1657
+1*T1 - 1*T2   -2.2667          0.7114     -3.19    0.0078
+1*T1 - 2*T2    0.3500          0.7114      0.49    0.6316
+1*T1 - 3*T2   -0.0433          0.7114     -0.06    0.9524
+2*T1 - 3*T1   -1.4100          0.7114     -1.98    0.0709
+2*T1 - 1*T2   -2.6267          0.7114     -3.69    0.0031
+2*T1 - 2*T2   -0.0100          0.7114     -0.01    0.9890
+2*T1 - 3*T2   -0.4033          0.7114     -0.57    0.5812
+3*T1 - 1*T2   -1.2167          0.7114     -1.71    0.1129
+3*T1 - 2*T2    1.4000          0.7114      1.97    0.0726
+3*T1 - 3*T2    1.0067          0.7114      1.41    0.1825
+1*T2 - 2*T2    2.6167          0.7114      3.68    0.0032
+1*T2 - 3*T2    2.2233          0.7114      3.13    0.0088
+2*T2 - 3*T2   -0.3933          0.7114     -0.55    0.5905
+

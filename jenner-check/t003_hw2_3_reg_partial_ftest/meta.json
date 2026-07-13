@@ -1,0 +1,7 @@
+{
+  "bundle": "t003_hw2_3_reg_partial_ftest",
+  "source_file": "SAS_HW2/HW2_3.sas",
+  "source_blob_sha": "41b86aed3aef57c9dffb7c6832fff3dfdd32f10b",
+  "source_commit": "50802b74dc9b0cafc61875c52303ce2f9e067d22",
+  "notes": "SAS_HW2/HW2_3.sas partial F-test workflow. The author's PROC IMPORT of GASTURBINE-1.txt (a SAS Studio home path unavailable off that server) was replaced with an inline tab-delimited DATALINES DATA step carrying the identical 67 gasturbine rows from the repo's SAS_HW2/GASTURBINE-1.txt, so the bundle is self-contained. The downstream analysis is the author's own: reduced vs. full quadratic PROC REG models on HEATRATE and a labelled partial F-test (TEST x1SQ, x2SQ=0) for the quadratic terms."
+}
