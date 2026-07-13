@@ -1,0 +1,7 @@
+{
+  "bundle": "t004_hw3_reg_variable_selection",
+  "source_file": "SAS_HW3/HW3.sas",
+  "source_blob_sha": "288a810947a82aefb11eaa91d0f68e09b9c32b27",
+  "source_commit": "50802b74dc9b0cafc61875c52303ce2f9e067d22",
+  "notes": "Variable-selection section of SAS_HW3/HW3.sas (problem 8.1). The author's PROC IMPORT of FLAG2.txt (a SAS Studio home path) was replaced with an inline tab-delimited DATALINES DATA step carrying the identical FLAG lowbid data from the repo's SAS_HW3/FLAG2.txt (279 rows); '*' missing tokens are represented as SAS numeric missing '.'. The x1..x14 renaming and the labelled forward / backward / stepwise PROC REG SELECTION models (SLENTRY/SLSTAY=0.05, DETAILS=SUMMARY) are the author's own. options obs=100 caps the modelling dataset at 100 rows."
+}

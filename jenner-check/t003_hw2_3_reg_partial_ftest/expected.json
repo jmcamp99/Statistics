@@ -1,0 +1,19 @@
+{
+  "_captured_at": "2026-07-13T03:18:02.027001+00:00",
+  "_captured_run_id": "r_50da316a21874cf780daaf1ad78698a5",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote gasturbine (67 rows, 9 columns).",
+    "NOTE: Wrote gasturbine2 (67 rows, 14 columns).",
+    "NOTE: PROC PRINT completed: 67 observations printed, 14 variables"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

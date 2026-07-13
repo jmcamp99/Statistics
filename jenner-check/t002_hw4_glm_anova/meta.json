@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_hw4_glm_anova",
+  "source_file": "SAS_HW4/HW4.sas",
+  "source_blob_sha": "f5fd4d38e7d5aea5ed03208629097af3a10de22d",
+  "source_commit": "50802b74dc9b0cafc61875c52303ce2f9e067d22",
+  "notes": "SAS_HW4/HW4.sas, byte-identical: three inline DATALINES datasets (traffic 15 rows, lettuce 16, adrenal 18) each analysed with PROC GLM. One-way ANOVA on traffic signal delay with LSMEANS/CONTRAST/MEANS (Brown-Forsythe hovtest, Tukey/LSD/Bonferroni), a one-way model on lettuce with orthogonal Linear/Quadratic contrasts, and a two-way Stage*Treatment model with interaction LSMEANS. Fully self-contained; no edits."
+}

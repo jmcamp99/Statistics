@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-13T03:14:26.644751+00:00",
+  "_captured_run_id": "r_8d9334dddb0b42b4b517ca4cc45e7f30",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote carvalue (54 rows, 6 columns).",
+    "NOTE: Output dataset analysis written.",
+    "NOTE: PROC PRINT completed: 54 observations printed, 10 variables",
+    "NOTE: Wrote carvalue2 (54 rows, 7 columns)."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

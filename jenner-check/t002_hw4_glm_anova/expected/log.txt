@@ -1,0 +1,81 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA traffic
+
+NOTE: Processing inline DATALINES (15 lines)
+
+NOTE: Read 15 rows from DATALINES.
+NOTE: Wrote traffic (15 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=traffic
+
+NOTE: PROC PRINT completed: 15 observations printed, 2 variables
+NOTE: PROC GLM data=traffic
+
+NOTE: Warning message:
+NOTE: In file(paste0("<wrapper>", .jen_rfd), "rb") :
+NOTE:   using 'raw = TRUE' because '<wrapper>' is a fifo or pipe
+NOTE: Warning message:
+NOTE: In readLines(file("stdin")) : incomplete final line found on 'stdin'
+NOTE: ODS plot written: glm_residuals_vs_predicted.spec.json
+NOTE: ODS plot written: glm_residual_histogram_panel.spec.json
+NOTE: ODS plot written: glm_residuals_vs_obs_order.spec.json
+NOTE: ODS plot written: glm_qq_plot.spec.json
+NOTE: ODS plot written: glm_lsmeans_SignalType.spec.json
+NOTE: PROC GLM ODS Graphics generated.
+NOTE: PROC GLM statement used.
+NOTE: DATA lettuce
+
+NOTE: Processing inline DATALINES (16 lines)
+
+NOTE: Read 16 rows from DATALINES.
+NOTE: Wrote lettuce (16 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=lettuce
+
+NOTE: PROC PRINT completed: 16 observations printed, 2 variables
+NOTE: PROC GLM data=lettuce
+
+NOTE: Warning message:
+NOTE: In file(paste0("<wrapper>", .jen_rfd), "rb") :
+NOTE:   using 'raw = TRUE' because '<wrapper>' is a fifo or pipe
+NOTE: Warning message:
+NOTE: In readLines(file("stdin")) : incomplete final line found on 'stdin'
+NOTE: ODS plot written: glm_residuals_vs_predicted.spec.json
+NOTE: ODS plot written: glm_residual_histogram_panel.spec.json
+NOTE: ODS plot written: glm_residuals_vs_obs_order.spec.json
+NOTE: ODS plot written: glm_qq_plot.spec.json
+NOTE: PROC GLM ODS Graphics generated.
+NOTE: PROC GLM statement used.
+NOTE: DATA adrenal
+
+NOTE: Processing inline DATALINES (18 lines)
+
+NOTE: Read 18 rows from DATALINES.
+NOTE: Wrote adrenal (18 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=adrenal
+
+NOTE: PROC PRINT completed: 18 observations printed, 3 variables
+NOTE: PROC GLM data=adrenal
+
+NOTE: Warning message:
+NOTE: In file(paste0("<wrapper>", .jen_rfd), "rb") :
+NOTE:   using 'raw = TRUE' because '<wrapper>' is a fifo or pipe
+NOTE: Warning message:
+NOTE: In readLines(file("stdin")) : incomplete final line found on 'stdin'
+NOTE: ODS plot written: glm_residuals_vs_predicted.spec.json
+NOTE: ODS plot written: glm_residual_histogram_panel.spec.json
+NOTE: ODS plot written: glm_residuals_vs_obs_order.spec.json
+NOTE: ODS plot written: glm_qq_plot.spec.json
+NOTE: ODS plot written: glm_lsmeans_Stage*Treatment.spec.json
+NOTE: ODS plot written: glm_lsmeans_Stage.spec.json
+NOTE: ODS plot written: glm_lsmeans_Treatment.spec.json
+NOTE: ODS plot written: glm_lsmeans_Stage*Treatment.spec.json
+NOTE: PROC GLM ODS Graphics generated.
+NOTE: PROC GLM statement used.

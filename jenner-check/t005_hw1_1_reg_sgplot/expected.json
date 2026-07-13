@@ -1,0 +1,19 @@
+{
+  "_captured_at": "2026-07-13T03:21:08.047237+00:00",
+  "_captured_run_id": "r_aabeadf5ab43483f9db0b90cbff37dce",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote blackbream1 (9 rows, 2 columns).",
+    "NOTE: Wrote heat (24 rows, 2 columns).",
+    "NOTE: PROC SGPLOT data=heat"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-13T03:15:49.415056+00:00",
+  "_captured_run_id": "r_7c0f7995193f4f7f87582f058ebabea1",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote traffic (15 rows, 2 columns).",
+    "NOTE: Wrote lettuce (16 rows, 2 columns).",
+    "NOTE: Wrote adrenal (18 rows, 3 columns).",
+    "NOTE: PROC PRINT completed: 18 observations printed, 3 variables"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}
